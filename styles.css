@@ -1,0 +1,100 @@
+/* All */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html, #root {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: aliceblue;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: blue;
+}
+
+/* Input */
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+input:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 0 0 5px blue;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: azure;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: scale(1.05);
+    border-color: blue;
+    color: blue;
+}
+
+/* List*/
+.list-container {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: rgba(240, 248, 255, 0.8);
+    font-size: 18px;
+    overflow-y: auto;
+}
+
+ol li {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    list-style-position: inside;
+}
+
+li::marker {
+    color: blue;
+}

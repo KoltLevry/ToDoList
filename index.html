@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
-       <link rel="stylesheet" href="styles.css">
-     <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="root">
         <div class="input-container">
             <input type="text" placeholder="Type your task">
-            <button>Add task</button>
+            <button id="addTask">Add task</button>
         </div>
         <div class="list-container">
-            <ol>
-                <li>Start</li>
-            </ol>
+            <ol></ol>
+            <button id="deleteList">Delete All</button>
         </div>
     </div>
+    <script src="script.js" defer></script>
 </body>
 </html>
